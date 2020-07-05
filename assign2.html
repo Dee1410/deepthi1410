@@ -1,0 +1,48 @@
+<html>   
+   <head>
+      <title>Registration</title>      
+     <script src="main.js" ></script>
+     <style type="text/css">
+     	tr:hover {background-color:grey;}
+tr {
+  background-color: grey;
+  color: white;
+}
+input[type=text,num]:focus {
+  background-color: pink;
+}
+     </style>
+  
+   </head>
+   
+   <body>
+      <form  name = "registration" >
+         <table align = "center" cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "texttype" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "Email" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">PhoneNumber</td>
+               <td><input type = "num" name = "phone" /></td>
+            </tr>
+            
+            
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" onclick="allLetter(document.registration.texttype);validateEmail();Validation()" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>
+
